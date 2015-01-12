@@ -9,7 +9,7 @@ class Migration(SchemaMigration):
     def forwards(self, orm):
         
         # Adding field 'Revision.manager_slug'
-        db.add_column('reversion_revision', 'manager_slug', self.gf('django.db.models.fields.CharField')(default='default', max_length=200, db_index=True), keep_default=False)
+        db.add_column('reversion_revision', 'manager_slug', self.gf('django.db.models.fields.CharField')(default='default', max_length=190, db_index=True), keep_default=False)
 
 
     def backwards(self, orm):
